@@ -1,0 +1,50 @@
+.apiki-wp-content p,
+.apiki-wp-content h1,
+.apiki-wp-content h2,
+.apiki-wp-content h3,
+.apiki-wp-content h4,
+.apiki-wp-content h5,
+.apiki-wp-content h6,
+.apiki-wp-content ul,
+.apiki-content ol,
+.apiki-wp-content dl {
+    margin: 0 0 1.3em;
+}
+.apiki-wp-content ul {
+    margin: 0 0 1.3em 1.5em;
+    list-style-type: disc;
+}
+.apiki-wp-content ol {
+    margin: 0 0 1.3em 1.8em;
+    list-style-type: decimal;
+}
+.apiki-wp-content strong { font-weight: bold; }
+.apiki-wp-content em { font-style: italic; }
+.apiki-wp-content .alignright,
+.apiki-wp-content a img.alignright
+{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.apiki-wp-content .alignleft,
+.apiki-wp-content a img.alignleft
+{
+    float:left;
+    margin:0 1em 1em 0;
+}
+.apiki-content .aligncenter,
+.apiki-content a img.aligncenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.apiki-wp-content .wp-caption {
+    margin: 1em;
+    padding: 0.5em;
+    border: 1px dashed #e5e5e5;
+    background: #f7f7f7;
+    font-size: 0.8em;
+    color: #000;
+}
+.apiki-wp-content .wp-caption-text { margin-bottom: 0 !important; }

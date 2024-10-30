@@ -1,0 +1,979 @@
+/*
+    Theme Name: Minha Loja WP
+    Theme URI: http://buscape.com
+    Description: Solução do Buscapé Company para seu e-commerce com WordPress
+    Author: Apiki WordPress
+    Version: 2.3
+*/
+
+@import "assets/css/combined.css";
+@font-face {
+    font-family: 'ArialRoundedMTBoldRegular';
+    src: url('assets/font/arial-rounded.eot');
+    src: url('assets/font/arial-rounded.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/arial-rounded.woff') format('woff'),
+        url('assets/font/arial-rounded.ttf') format('truetype'),
+        url('assets/font/arial-rounded.svg#ArialRoundedMTBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AFKlampenborgMedium';
+    src: url('assets/font/afklampenborg_medium.eot');
+    src: url('assets/font/afklampenborg_medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/afklampenborg_medium.woff') format('woff'),
+        url('assets/font/afklampenborg_medium.ttf') format('truetype'),
+        url('assets/font/afklampenborg_medium.svg#AFKlampenborgMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaMdBTBold';
+    src: url('assets/font/tt0144m-webfont.eot');
+    src: url('assets/font/tt0144m-webfont.eot?#iefix') format('embedded-opentype'),
+        url('assets/font/tt0144m-webfont.woff') format('woff'),
+        url('assets/font/tt0144m-webfont.ttf') format('truetype'),
+        url('assets/font/tt0144m-webfont.svg#FuturaMdBTBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_tt0142m';
+    src: url('assets/font/tt0142m.eot');
+    src: local('â˜º'), url('assets/font/tt0142m.woff') format('woff'),
+        url('assets/font/tt0142m.ttf') format('truetype'),
+        url('assets/font/tt0142m.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { background: url(assets/images/bg-footer.png) repeat-x bottom; }
+body {
+    background: url(assets/images/bg-html.png) repeat-x top;
+    font: normal 17px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #000000;
+}
+body.page-carrinho { background: url(assets/images/bg-html-carrinho.png) repeat-x top; }
+body.page-carrinho #header { margin-bottom: 20px; height: 105px; }
+body.page-carrinho .nav, body.page-carrinho .nav-footer { display: none; }
+body.page-carrinho #footer #method-payment {  margin: 53px 0 52px; }
+a {
+    text-decoration: none;
+    display: block;
+}
+
+address { font-style: normal; }
+
+/** Title **/
+h2.title, h2.title a, h1.title, h1.title a {
+    font: bold 43px/100% "AFKlampenborgMedium",Arial, Helvetica, Sans-Serif; color: #000000;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+.featured-description h2.title { font: bold 42px/100% "AFKlampenborgMedium",Arial, Helvetica, Sans-Serif; }
+h3.title-box, h3.title-box a, h1.title-box, h1.title-box a, h2.title-box, h2.title-box a {
+    background: url(assets/images/bg-title-box.png) no-repeat;
+    color: #597F10;
+    font: bold 22px/35px "AFKlampenborgMedium",Arial, Helvetica, Sans-Serif;
+    padding-left: 8px;
+    width: 335px;
+    height: 35px;
+    display: block;
+}
+h4.title, h4.title a { font: normal 22px/100% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif; color: #000000 }
+h4.title a:hover, h2.title a:hover { color: #183906; }
+h4.title a:active, h4.title a:focus, h2.title a:active, h2.title a:focus { color: #0E2103; }
+
+/** Breadcrumbs **/
+.breadcrumbs { overflow: hidden; margin: 5px 0 30px 0; padding: 2px;}
+.breadcrumbs a, .breadcrumbs span {
+    display: inline-block;
+    font: bold 13px/100% Arial, Helvetica, Sans-Serif;
+    color: #777;
+    margin-right: 10px;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    float: left;
+}
+.breadcrumbs a:hover { color: #333333; }
+.breadcrumbs a:active, .breadcrumbs a:focus { color: #000000; }
+.breadcrumbs span.next {
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+/** buttons **/
+#product-list ul { margin-top: 20px; }
+#product-list .btn, .featured-description .btn {
+    padding: 0 0 0 37px;
+    border: 1px solid #ccc;
+    border-right: 0 none;
+    width: 136px;
+
+    background: #F9f9f9 url(assets/images/pag-digital.png) no-repeat 4px -28px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+#product-list .btn a, .featured-description .btn a {
+    width: 126px;
+    padding: 4px 4px;
+    border: 1px solid #FF9900;
+    display: block;
+    font: normal 18px/120% "ArialRoundedMTBoldRegular", Arial, Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 0;
+    /*
+        background: #FF9900;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCC00', endColorstr='#FF9900');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFCC00), to(#FF9900));  webkit browsers
+        background: -moz-linear-gradient(top,  #FFCC00,  #FF9900);  Firefox 3.6+
+    */
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    -moz-box-shadow: 0 0 5px #E18700;
+    -webkit-box-shadow: 0 0 5px #E18700;
+    box-shadow: 0 0 5px #E18700;
+}
+#product-list .btn a:hover, .featured-description .btn a:hover {
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -44px;
+    /*    background: #FFD940;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD940', endColorstr='#FF9900');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFD940), to(#FF9900));  webkit browsers
+        background: -moz-linear-gradient(top,  #FFD940,  #FF9900);  Firefox 3.6+ */
+}
+#product-list .btn a:active, .featured-description .btn a:active,
+#product-list .btn a:focus, .featured-description .btn a:focus {
+    border: 0 none;
+    padding: 5px 5px;
+    color: #A46200;
+    text-shadow: 2px 2px 0 #FFC733;
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -83px;
+    /*    background: #FF9900;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9900', endColorstr='#FFCC00');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#FF9900), to(#FFCC00));  webkit browsers
+        background: -moz-linear-gradient(top,  #FF9900,  #FFCC00);  Firefox 3.6+ */
+
+    -moz-box-shadow:  1px 1px 2px #643C00 inset;
+    -webkit-box-shadow: 1px 1px 2px #643C00 inset;
+    box-shadow:  1px 1px 2px #643C00 inset;
+}
+.featured-description .btn a:active, .featured-description .btn a:focus { padding: 4px 5px; }
+
+#product-list .btn a:active span, .featured-description .btn a:active span,
+#product-list .btn a:focus span, .featured-description .btn a:focus span{ background-position: 2px -60px; }
+
+.featured-description .btn {
+    background: url("assets/images/pag-digital.png") no-repeat 10px 9px #F9F9F9;
+    clear: both;
+    padding: 22px 0 15px;
+    margin-top: 30px;
+    position: relative;
+    width: 220px;
+    float: right;
+}
+.featured-description .btn a {
+    font-size: 24px;
+    padding: 3px 4px 4px 4px;
+    width: 165px;
+}
+.featured-description .btn span {
+    background: url("assets/images/bg-carrinho.png") no-repeat scroll 5px -23px transparent;
+    display: block;
+    padding: 0 20px 0 35px;
+}
+.featured-description .btn a:active span, .featured-description .btn a:focus span { background-position: 0 -92px }
+
+#product-list .btn  span {
+    background: url("assets/images/bg-carrinho.png") no-repeat 5px 3px;
+    display: block;
+    padding: 0 20px 0 28px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#car-buy .close-request {  margin-right: 24px; }
+#car-buy .close-request li {  margin-left: 27px; }
+#car-buy .close-request .btn {
+    background: url("assets/images/btn-close-request.png") no-repeat;
+    height: 43px;
+}
+#car-buy .close-request .btn input[type="submit"] {
+    background: url("assets/images/sliding-right.png") no-repeat scroll right 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 22px/120% "ArialRoundedMTBoldRegular",Arial,Helvetica,Sans-Serif;
+    height: 42px;
+    left: 24px;
+    letter-spacing: -1px;
+    margin-top: 1px;
+    padding: 0 22px 14px 67px;
+    position: relative;
+    text-transform: uppercase;
+}
+#car-buy .close-request .btn:hover { background-position: 0px -50px; }
+#car-buy .close-request .btn:hover input[type="submit"] { background-position: right -43px; }
+
+#car-buy .close-request .btn:active { background-position: 0px -100px; }
+#car-buy .close-request .btn:active input[type="submit"] { background-position: right -85px; }
+
+#product-added {
+    clear: both;
+    display: block;
+    float: right;
+    margin-top: 30px;
+}
+#product-list #product-added {
+    float: none;
+    margin-top: 0;
+}
+
+/** Layout Structure **/
+
+/** Header **/
+#header {
+    height: 150px;
+    position: relative;
+    z-index: 999;
+}
+#header h1 { margin-top: 20px; width: 132px; }
+#header #box-search {
+    position: relative;
+    top: -30px;
+    left: 240px;
+    width: 460px;
+}
+#header #box-search input[type="text"] {
+    font: italic 16px/25px "Conv_tt0142m", Arial, Helvetica, Sans-Serif;
+    color: #686868;
+    padding: 0 30px 0 10px;
+    height: 30px;
+    width: 417px;
+    border: 1px solid #999999;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#header #box-search  input[type="text"]:active,
+#header #box-search  input[type="text"]:focus,#car-buy .form-cep input[type="text"]:active, #car-buy .form-cep input[type="text"]:focus { background:  url(assets/images/bg-input.png) repeat-x bottom; color: #000000; }
+
+#header #box-search input[type="submit"], #car-buy .calcular-frete, #car-buy ul#my-account li a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: red;
+    border: 0 none;
+    height: 31px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font: bold 20px/120% "FuturaMdBTBold", Arial, Helvetica, Sans-Serif;
+    text-shadow: 1px 1px 1px #71DD51;
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -122px;
+    /*
+        background: #7DE061;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7DE061', endColorstr='#183906');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#7DE061), to(#183906));  webkit browsers
+        background: -moz-linear-gradient(top,  #7DE061,  #183906);  Firefox 3.6+ */
+
+    -moz-box-shadow: 1px 0px 0px #666666;
+    -webkit-box-shadow: 1px 0px 0px #666666;
+    box-shadow: 1px 0px 0px #666666;
+
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+#header #box-search input[type="submit"] { width: 80px; line-height: 28px; }
+#header #box-search input[type="submit"]:hover {
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -157px;
+    /*    background: #7DE061;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DE474', endColorstr='#336600');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#8DE474), to(#336600));  webkit browsers
+        background: -moz-linear-gradient(top,  #8DE474, #336600);  Firefox 3.6+ */
+}
+#header #box-search input[type="submit"]:active, #header #box-search input[type="submit"]:focus {
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -192px;
+    -moz-box-shadow:  1px 1px 2px #000000 inset;
+    -webkit-box-shadow: 1px 1px 2px #000000 inset;
+    box-shadow:  1px 1px 2px #000000 inset;
+}
+#header #car-itens {
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+#header #car-itens a {
+    font: normal 17px/120% "Conv_tt0142m", Arial, Helvetica, Sans-Serif;
+    color: #51730D;
+    background:  url(assets/images/car-itens.png) no-repeat;
+    padding: 10px 0 5px 40px;
+}
+#header #car-itens a:hover { color: #97AB6E; background-position: 0 -34px }
+#header #car-itens a:active { color: #748F3D; background-position: 0 -68px }
+
+#header #car-itens a.car-full { color: #748F3D; background-position: 0 -103px }
+#header #car-itens a.car-full:hover { color: #97AB6E; background-position: 0 -140px }
+#header #car-itens a.car-full:active, #header #car-itens a.car-full:focus { color: #748F3D; background-position: 0 -175px }
+
+#header #car-itens a span { border-left: 1px solid #51730D; padding-left: 5px;}
+#header ul.nav {
+    position: absolute;
+    bottom: 2px;
+    clear: both;
+    height: 43px;
+    overflow: hidden;
+    width: 100%;
+}
+#header .nav li {
+    float: left;
+    border-left: 1px solid #6D9914;
+}
+#header .nav li.last {  border-right: 1px solid #6D9914; }
+#header .nav li.last a {
+    padding: 14px 22px;
+    border-right: 1px solid #39530B;
+}
+#header .nav li a, #header .nav li a:visited {
+    font: normal 22px/80% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #ffffff;
+    padding: 14px 24px 11px 23px;
+    border-left: 1px solid #39530B;
+}
+#header .nav li:hover { background: url(assets/images/bg-hover-nav.png) repeat-x; }
+#header .nav li:active, #header .nav li:focus { background: url(assets/images/bg-active-nav.png) repeat-x;}
+/** submenu **/
+#header .nav  ul, #subdivision { display: none; }
+#header .nav li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    -top: 45px;
+    overflow: hidden;
+    background: #f3f3f3 url(assets/images/bg-sub-menu.png) repeat-x bottom;
+    border: 1px solid #cccccc;
+
+    -moz-box-shadow: 0 0 3px #999;
+    -webkit-box-shadow: 0 0 3px #999;
+    box-shadow: 0 0 3px #999;
+
+    -moz-border-radius: 0 10px 10px 10px;
+    -webkit-border-radius: 0 10px 10px 10px;
+    border-radius: 0 10px 10px 10px;
+}
+
+#header .nav li:hover ul li { float: none; border: none; }
+#header .nav li:hover ul li:hover { background: none; }
+#header .nav li:hover ul li a {
+    border: none;
+    color: #5D8511;
+    font-size: 18px;
+    padding: 15px 35px 15px 23px;
+    font: normal 18px/80% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    background: url(assets/images/border-submenu.png) repeat-x bottom;
+}
+#header .nav li:hover ul li.last a {background: none;}
+#header .nav li:hover ul li a:hover { color: #45640D; }
+#header .nav li:hover ul li a:active { color: #72A415 }
+
+/** Wrapper-content **/
+#content, #sidebar { padding-top: 30px; }
+/** Sidebar
+====================**/
+#sidebar {
+    background: #f3f3f3 url(assets/images/bg-sidebar.png) repeat-x top;
+    border: 1px solid #d6d6d6;
+    width: 218px;
+    margin-bottom: 50px;
+
+    -moz-border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+}
+#sidebar #sidebar-category-list {  }
+#sidebar ul {margin-bottom: 35px; }
+#sidebar ul li a {
+    font: bold 20px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #597F10;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 0 15px 9px 15px;
+    margin-bottom: 6px;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+#sidebar .last, #sidebar .last .children, #sidebar ul ul li.last  a {
+    border: 0 none;
+    margin-bottom: 10px;
+}
+#sidebar ul li a:hover { color: #344B0A; }
+#sidebar ul li a:active { color: #223106; }
+
+#sidebar ul ul li a {
+    font: 18px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #6B9A14;
+    padding-left: 22px;
+    padding-bottom: 7px;
+}
+#sidebar ul ul li a:hover { color: #597F10; }
+#sidebar ul ul li a:active, #sidebar ul ul li a:focus { color: #33490A; }
+
+/** featured **/
+#featured {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 700px;
+}
+#featured .featured-content {
+    overflow: hidden;
+    width: 700px;
+    position: relative;
+}
+#featured h3 { margin-bottom: 40px; }
+#featured .featured-thumb { float: left }
+#featured .featured-description h1 {
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+#featured .featured-description {
+    text-align: right;
+    overflow: hidden;
+    width: 265px;
+    padding-right: 2px;
+}
+.featured-single { margin-bottom: 50px !important; }
+.featured-single .featured-description { width: 323px !important; }
+.featured-single { width: 700px; }
+.featured-single .featured-thumb {
+    float: left;
+    margin: 0 40px 0 0 !important;
+    min-height:310px;
+    height:auto !important;
+    height:310px;
+ }
+ .slide-home {
+     width: 590px;
+     overflow: hidden;
+     margin-left: 55px;
+ }
+
+#featured .featured-description p.text-excerpt {
+    width: 335px;
+    float: right;
+    color: #666666;
+    padding-right: 1px;
+    font: normal 15px/120% Arial, Helvetica, Sans-Serif;
+}
+#featured .featured-description p.more-detail a {
+    font: 14px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #253406;
+    float: right;
+    width: 75px;
+    border-bottom: 1px solid #c9ccc1;
+    margin-top: 5px;
+}
+#featured .featured-description p.more-detail a:hover { color: #F3C828; }
+#featured .featured-description p.more-detail a:active, #featured .featured-description p.more-detail a:focus { color: #FF9900; }
+#featured .featured-description .price, #product-list .price {
+    margin: 5px 0 10px 0;
+    display: block;
+    font: bold 40px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #577D10;
+    float: right;
+    clear: both;
+}
+#featured .featured-description .price { margin-top: 20px; letter-spacing: -2px; }
+
+
+#featured .featured-description .price-cut {
+    font: 20px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #253406;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0;
+    margin-bottom: -4px;
+}
+#featured .featured-description .forms-payment {
+    display: block;
+    font: 12px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #253406;
+    letter-spacing: 0;
+    margin-top: -2px;
+}
+#featured .featured-description .forms-payment strong { font-weight: bold; }
+#featured .featured-description .forms-payment a {
+    color: #253306;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+#subdivision { margin-bottom: 50px; }
+#subdivision ul {
+    float: left;
+    margin: 0 15px 20px 0;
+    list-style-type: none;
+    font: 16px/120% Arial, Helvetica, Sans-Serif;
+}
+#subdivision ul li { margin-bottom: 5px; }
+#subdivision ul li span { font-weight: bold; }
+#subdivision .interest {
+    font: 13px/120% Arial, Helvetica, Sans-Serif;
+    display: block;
+    clear: both;
+}
+
+
+#product-list .grid_3 {
+    margin-bottom: 70px;
+    min-height: 370px;
+    height:auto !important;
+    height: 370px;
+}
+#product-list .grid_3 h4 {
+    min-height: 70px;
+    height:auto !important;
+    height: 70px;
+    width: 210px;
+}
+#product-list .grid_3 .thumbnail {
+    border: 3px solid  transparent;
+    display: table;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    border-radius: 19px;
+}
+#product-list .grid_3 .thumbnail:hover { border: 3px solid #cccccc; }
+#product-list .grid_3 .thumbnail:active, #product-list .grid_3 .thumbnail:focus { border: 3px solid #727272; }
+#product-list .price {
+    font: bold 29px/120% "AFKlampenborgMedium",Arial,Helvetica,Sans-Serif;
+    letter-spacing: -1px;
+    margin: 10px 0;
+    float: none;
+}
+#product-list .price-cut {
+    font-size: 15px;
+    color: #253406;
+    text-decoration: line-through;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -10px;
+}
+#product-detail, #product-comments { display: inline-block; margin: 0 0 70px 0; }
+#product-detail p, #product-comments p { font-family: arial, helvetica, Sans-Serif; }
+
+/** Wp-pagenavi **/
+.wp-pagenavi, .navigation {
+    text-align: center;
+    font: bold 16px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    margin-bottom: 35px;
+    clear: both;
+}
+.navigation a { display: inline-block; }
+
+.wp-pagenavi .pages a:hover, .wp-pagenavi .nextpostslink:hover, .navigation .next:hover,
+.navigation .prev:hover { color: #253306; }
+.wp-pagenavi .pages a:active, .wp-pagenavi .nextpostslink:active,
+.navigation .next:active, .navigation .prev:active { color: #121803; }
+
+.wp-pagenavi .pages a, .wp-pagenavi a.first, .wp-pagenavi .last, .navigation .next, .navigation .prev {
+    margin-right: 3px;
+    color: #4F730D;
+    border-bottom: 1px solid #ccc;
+    letter-spacing: 1px;
+    font: bold 15px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+}
+.wp-pagenavi .nextpostslink { margin-left: 9px; }
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+    color: #1D480B;
+    font: bold 18px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    border: 0 none;
+}
+.wp-pagenavi .previouspostslink { margin-right: 8px; }
+.wp-pagenavi  a, .wp-pagenavi span, .navigation a {
+    display: inline;
+    font: bold 20px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    color: #83BA18;
+    margin: 0 5px;
+}
+.wp-pagenavi a, .navigation a {
+    border-bottom: 1px solid #83BB18;
+    -moz-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+.wp-pagenavi a:hover, .navigation a:hover { color: #557B10; }
+.wp-pagenavi a:active, .navigation a:active { color: #39520B; }
+.wp-pagenavi .current, .navigation .current {
+    background: url(assets/images/bg-pagenavi-current.png) repeat;
+    padding: 3px 13px 3px 10px;
+    color: #253306;
+    font-size: 22px;
+    font-style: italic;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+/* Carrinho de Compras */
+.steps { overflow: hidden; margin-top: 50px; height: 81px; }
+#car-buy h4 { margin-bottom: 15px; }
+#car-buy .steps li {
+    float: left;
+    margin: 0 35px 40px 0;
+    display: inline-block;
+}
+#car-buy .steps li, #car-buy .steps li a {
+    color: #999999;
+    font: normal 22px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    background: url(assets/images/bg-steps.png) no-repeat;
+    padding: 7px 0 8px 45px;
+}
+#car-buy .steps li.current { background-position: 0px -42px }
+#car-buy .steps li.step-identification { background-position: 0px -85px }
+#car-buy .steps li.step-identification.current { background-position: 0px -127px }
+
+#car-buy .steps li.step-payment { background-position: 0px -85px }
+#car-buy .steps li.step-payment.current { background-position: 0px -128px }
+
+#car-buy .steps li.step-request { background-position: 0px -173px  }
+#car-buy .steps li.step-request.current { background-position: 0px -214px }
+
+#car-buy table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    clear: both;
+}
+#car-buy table th { text-align: left; }
+#car-buy .grid_8 table img { margin: 0 25px 0 0;    width: 62px; }
+#car-buy .grid_8 table p, #car-buy .grid_8 table p a { width: 240px !important; }
+#car-buy .table-amount { text-align: center; }
+#car-buy table th {
+    color: #333333;
+    font: normal 22px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    padding-bottom: 5px;
+}
+#car-buy table tr.first { border: 0 none; }
+#car-buy table tr { border: 1px solid #cccccc; }
+#car-buy table td { padding: 35px 0 10px; }
+#car-buy table td a.closed {
+    background: url(assets/images/table-quantidade.png) no-repeat -42px 0;
+    color: #333333;
+    width: 20px;
+    text-indent: -99999px;
+}
+#car-buy table td a.closed:hover { background-position: -42px -21px; }
+#car-buy table td a.closed:active { background-position: -42px -41px; }
+#car-buy table td .menos-quantidade, #car-buy table td .mais-quantidade { display: inline-block; }
+#car-buy table td .menos-quantidade span, #car-buy table td .mais-quantidade span {
+    background: url(assets/images/table-quantidade.png) no-repeat;
+    color: #ffffff;
+    display: block;
+    margin: 0 10px 0 10px;
+    width: 19px;
+    height: 20px;
+    text-align: center;
+    line-height: 17px;
+    text-indent: -99999px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    zoom: 1;
+}
+#car-buy table td .menos-quantidade span:hover, #car-buy table td .mais-quantidade span:hover { background-position: 0 -22px; }
+#car-buy table td .menos-quantidade span:active, #car-buy table td .mais-quantidade span:active { background-position: 0 -42px; }
+#car-buy table td .menos-quantidade { margin-left: 7px; }
+#car-buy table img {
+    float: left;
+    margin: -27px 25px 0;
+}
+#car-buy table td .mais-quantidade span { background-position: -22px 0; }
+#car-buy table td .mais-quantidade  span:hover { background-position: -22px -22px; }
+#car-buy table td .mais-quantidade span:active { background-position: -22px -42px; }
+#car-buy table p , #car-buy table p a {
+    font: normal 16px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    display: table;
+    width: 300px;
+    color: #000000;
+}
+#car-buy table p span { font: normal 12px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif; display: block; color: #666666;}
+
+#car-buy span.frete { clear: both; }
+#car-buy span.total { margin-top: 45px !important; }
+#car-buy span.total, #car-buy span.subtotal, #car-buy .form-cep, #car-buy span.frete {
+    display: block;
+    font-size: 25px;
+    margin: 30px 0;
+    text-align: right;
+}
+#car-buy .form-cep  {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+#car-buy .form-cep label { color: #666666; margin-left: 15px; font-size: 22px; margin-top: 5px;  }
+#car-buy .form-cep input[type="text"] {
+    padding: 0 5px;
+    border: 1px solid #cccccc;
+    height: 34px;
+    font: /*italic*/ 16px/32px "Conv_tt0142m", Arial, Helvetica, Sans-Serif;
+    color: #686868;
+    width: 90px;
+    letter-spacing: -1px;
+    overflow: hidden;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#car-buy ul.close-request { float: right; margin-bottom: 40px; }
+#car-buy ul.close-request li { float: left; }
+#car-buy ul.close-request li a {
+    font: 18px/120% "AFKlampenborgMedium",Arial,Helvetica,Sans-Serif;
+    color: #000000;
+    margin-top: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+#car-buy ul.close-request li a:hover, .already-registered p a:hover, #header #logged-in ul li.last a:hover,
+#car-buy table td a.closed:hover { color: #567C10; }
+
+#car-buy ul.close-request li a:active, #car-buy ul.close-request li a:focus,
+.already-registered p a:active, .already-registered p a:focus, #header #logged-in ul li.last a:active,
+#header #logged-in ul li.last a:focus, #car-buy table td a.closed:active, #car-buy table td a.closed:focus { color: #78AD16; }
+
+#car-buy .calcular-frete {
+    padding-right: 9px !important;
+    width: 160px !important;
+    float: none;
+    clear: both;
+}
+#car-buy .calcular-frete, #car-buy ul#my-account li a {
+    float: right;
+    font-size: 16px;
+    height: 34px;
+    line-height: 31px;
+    padding-left: 8px;
+    position: static;
+    text-align: center;
+    width: 128px;
+    color: #183906;
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -123px;
+    /*
+        background: #52D62C;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#52D62C', endColorstr='#336600');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#52D62C), to(#336600));  webkit browsers
+        background: -moz-linear-gradient(top,  #52D62C,  #336600);  Firefox 3.6+ */
+}
+#car-buy .calcular-frete:hover, #car-buy ul#my-account li a:hover {
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -158px;
+    /*    background: #8DE474;  para browsers sem suporte a CSS 3
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DE474', endColorstr='#336600');  IE
+        background: -webkit-gradient(linear, left top, left bottom, from(#8DE474), to(#336600));  webkit browsers
+        background: -moz-linear-gradient(top,  #8DE474,  #336600);  Firefox 3.6+ */
+}
+#car-buy .calcular-frete:active, #car-buy ul#my-account li a:active, #car-buy .calcular-frete:active, #car-buy ul#my-account li a:focus {
+    background: url(assets/images/sprite-buttons.png) repeat-x 0 -193x;
+    -moz-box-shadow: 1px 1px 2px #000 inset;
+    -webkit-box-shadow: 1px 1px 2px #000 inset;
+    box-shadow: 1px 1px 2px #000 inset;
+}
+
+.opcao-envio {
+    margin: 7px 0 15px;
+    width: 273px;
+    float: right;
+}
+.opcao-envio img { margin: 0 10px 0 0; }
+.button-frete {
+    padding-bottom: 25px;
+    clear: both;
+}
+.already-registered {
+    width: 380px;
+    border-right: 1px solid #999999;
+    padding-right: 90px;
+    margin-bottom: 40px;
+}
+.already-registered h4, .not-registered h4 { margin-bottom: 20px; }
+.already-registered p a, .not-registered p { margin-bottom: 7px;text-align: right; color: #000000; }
+.already-registered { float: left }
+.not-registered { float: right;margin: 0; border: 0 none; }
+.already-registered .field, .not-registered .field {
+    border: 1px solid #cccccc;
+    font-family: inherit;
+    color: #666;
+    font-size: 22px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 5px;
+    margin: 0 0 10px 0;
+    display: block;
+    width: 369px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.already-registered .field:active, .not-registered .field:active,
+.already-registered .field:focus, .not-registered .field:focus {
+    background: #cccccc;
+    color: #ffffff;
+    font: normal 21px/120% "AFKlampenborgMedium",Arial,Helvetica,Sans-Serif;
+}
+#car-buy address {
+    font: normal 22px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #666666;
+    border-right: 1px solid;
+    margin-right: -7px;
+}
+#car-buy .grid_8 table {
+    margin: 0;
+    font: normal 15px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+}
+#car-buy .grid_8 table th { font-size: 16px; }
+#car-buy .grid_8 table tr { border: 0 none; }
+#car-buy .grid_8 table p { width: auto; }
+
+.product-no-thumb {
+    float: left;
+    margin: 0 25px 25px 0;
+}
+
+
+/** Carrinho vazio **/
+.car-empty {
+    background: url(assets/images/car-itens.png) no-repeat left -215px;
+    margin: 50px 0 70px 0;
+    padding-left: 125px;
+    zoom: 1; /* Fazer com que o background aparecer de maneira perfeita no IE7  */
+}
+.car-empty, .car-empty a  {
+    font: normal 24px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #3D570B;
+}
+.car-empty a {
+    line-height: 120%;
+    font-size: 30px;
+    color: #597F10;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.car-empty a:hover { color: #7AAF16; }
+.car-empty a:active { color: #3F5A0C; }
+
+/** Comfirmação do pedido **/
+#car-buy .success {
+    font: normal 24px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #212F06;
+    background: url(assets/images/bg-success.png) no-repeat;
+    padding: 0 0 50px 100px;
+}
+#car-buy .success span { display: block; }
+#car-buy ul#my-account { display: inline-block; height: 30px; padding-bottom: 46px; }
+#car-buy ul#my-account li { float: left;  margin-right: 40px; }
+#car-buy ul#my-account li a {
+    color: #183906;
+    float: left;
+    height: 28px;
+    line-height: 29px;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 50px;
+    width: auto;
+}
+#car-buy .ebit-pesquisa img { margin-bottom: 30px}
+
+/** 404 **/
+.page-not-found {
+    font: bold 26px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #597F10;
+    margin: 35px 0 110px 0;
+}
+.page-not-found a:hover { color: #78AD16; }
+.page-not-found a:active { text-decoration: none; }
+.page-not-found a {
+    font: bold 34px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #597F10;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+/** Footer
+===================**/
+#footer {
+    position: relative;
+    height: 314px;
+}
+#footer .branding { float: left; }
+#footer .nav-footer { overflow: hidden; }
+#footer ul.nav-footer  { margin: 20px 0 55px -30px;}
+#footer ul.nav-footer  li { float: left; }
+#footer ul.nav-footer a {
+    font: normal 18px/120% "AFKlampenborgMedium", Arial, Helvetica, Sans-Serif;
+    color: #212F06;
+    margin: 0 12px 0 30px;
+}
+#footer ul.nav-footer  li a:hover { color: #F3C828; }
+#footer ul.nav-footer li a:active, #footer ul.nav-footer  li a:focus { color: #FFA500; }
+
+#footer #method-payment { overflow: hidden; height: 120px; margin: 20px 0; }
+#footer #method-payment img {  margin-bottom: 10px; }
+#footer .title { color: #fff; margin-bottom: 10px; }
+#footer #method-payment li {
+    float: left;
+    background: url(assets/images/cards.png) no-repeat;
+    text-indent: -99999px;
+    width: 53px;
+    height: 56px;
+    margin: 0 0 60px;
+}
+#footer #method-payment li.american-express { background-position: -53px 0; }
+#footer #method-payment li.master-card { background-position: -106px 0; }
+#footer #method-payment li.diner-club { background-position: -158px 0; }
+#footer #method-payment li.hipercard { background-position: -212px 0; }
+#footer #method-payment li.aura { background-position: -263px 0; }
+#footer #method-payment li.saldo-virtual { background-position: -314px 0; }
+#footer #method-payment li.boleto { background-position: -367px 0; }
+#footer #method-payment li.itau { background-position: -422px 0; }
+#footer #method-payment li.banco-brasil { background-position: -474px 0; }
+#footer #method-payment li.bradesco { background-position: -527px 0; }
+
+#address {
+    position: absolute;
+    right: 0;
+    top: 97px;
+    color: #fff;
+    font: normal 12px/135% "Conv_tt0142m", Arial, Helvetica, Sans-Serif;
+}
+
+#footer .footer-logos {     float: right; width: 167px; }
+#footer .apiki-logo a, #footer .buscape-logo a {
+    background: url("assets/images/logos-footer.png") no-repeat;
+    float: left;
+    height: 40px;
+    margin: 28px 0 0 0;
+    text-indent: -99999px;
+    text-transform: uppercase;
+    width: 70px;
+}
+#footer .buscape-logo a:hover { background-position: 0 -46px }
+#footer .buscape-logo a:active { background-position: 0 -45px }
+#footer .apiki-logo a { background-position: -94px 0; margin: 30px 0px 0 25px; width: 70px; }
+#footer .apiki-logo a:hover { background-position: -94px -46px; }
+#footer .apiki-logo a:active { background-position: -94px -45px; }
+
+#footer .selo-ebit {
+    float: left;
+    margin: -20px 20px;
+}

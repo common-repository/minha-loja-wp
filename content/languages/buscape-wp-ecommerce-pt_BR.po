@@ -1,0 +1,611 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Apiki-WP-Ecommerce 0.2 Beta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-16 17:48-0300\n"
+"PO-Revision-Date: 2012-03-16 17:49-0300\n"
+"Last-Translator: Arilton Freitas <arisenna@gmail.com>\n"
+"Language-Team: Apiki WordPress <arilton@apiki.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../buscape-wp-ecommerce.php:65
+msgid "Minha Loja WP Dashboard"
+msgstr "Minha Loja WP Dashboard"
+
+#: ../../buscape-wp-ecommerce.php:65
+msgid "Minha Loja WP"
+msgstr "Minha Loja WP"
+
+#: ../../buscape-wp-ecommerce.php:66
+msgid "Minha Loja WP Pagamento Digital"
+msgstr "Minha Loja WP Pagamento Digital"
+
+#: ../../buscape-wp-ecommerce.php:66
+msgid "Pagamento Digital"
+msgstr "Pagamento Digital"
+
+#: ../../buscape-wp-ecommerce.php:67
+msgid "Minha Loja WP Buscapé integration"
+msgstr "Minha Loja WP Integração Buscapé"
+
+#: ../../buscape-wp-ecommerce.php:67
+msgid "Buscapé integration"
+msgstr "Integração Buscapé"
+
+#: ../../buscape-wp-ecommerce.php:68
+msgid "Minha Loja WP e-bit"
+msgstr "Minha Loja WP e-bit"
+
+#: ../../buscape-wp-ecommerce.php:68
+msgid "e-bit"
+msgstr "e-bit"
+
+#: ../../buscape-wp-ecommerce.php:69
+msgid "Minha Loja WP eBcommerce"
+msgstr "Minha Loja WP eBcommerce"
+
+#: ../../buscape-wp-ecommerce.php:69
+msgid "eBcommerce"
+msgstr "eBcommerce"
+
+#: ../../buscape-wp-ecommerce.php:70
+msgid "Minha Loja WP QueBarato!"
+msgstr "Minha Loja WP QueBarato!"
+
+#: ../../buscape-wp-ecommerce.php:70
+msgid "QueBarato!"
+msgstr "QueBarato!"
+
+#: ../../buscape-wp-ecommerce.php:71
+msgid "Minha Loja WP Store brand"
+msgstr "Minha Loja WP Marca da loja"
+
+#: ../../buscape-wp-ecommerce.php:71
+msgid "Store brand"
+msgstr "Marca da loja"
+
+#: ../../buscape-wp-ecommerce.php:72
+msgid "Minha Loja WP Contact information"
+msgstr "Minha Loja WP Informações de contato"
+
+#: ../../buscape-wp-ecommerce.php:72
+msgid "Contact information"
+msgstr "Informações de contato"
+
+#: ../../buscape-wp-ecommerce.php:73
+msgid "Minha Loja WP Shopping Cart"
+msgstr "Minha Loja WP Carrinho de compras"
+
+#: ../../buscape-wp-ecommerce.php:73
+msgid "Shopping cart"
+msgstr "Carrinho de compras"
+
+#: ../../buscape-wp-ecommerce.php:74
+msgid "Minha Loja WP Shipping"
+msgstr "Minha Loja WP Shipping"
+
+#: ../../buscape-wp-ecommerce.php:74
+msgid "Shipping"
+msgstr "Envio"
+
+#: ../../buscape-wp-ecommerce.php:75
+msgid "Uninstall Minha Loja WP"
+msgstr "Uninstall Minha Loja WP"
+
+#: ../../buscape-wp-ecommerce.php:75
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: ../../buscape-wp-ecommerce.php:85
+msgid "Products"
+msgstr "Produtos"
+
+#: ../../buscape-wp-ecommerce.php:86
+msgid "Product"
+msgstr "Produto"
+
+#: ../../buscape-wp-ecommerce.php:87
+msgid "Add new"
+msgstr "Adicionar novo"
+
+#: ../../buscape-wp-ecommerce.php:88
+msgid "Add new product"
+msgstr "Adicionar novo produto"
+
+#: ../../buscape-wp-ecommerce.php:89
+msgid "Edit product"
+msgstr "Editar produto"
+
+#: ../../buscape-wp-ecommerce.php:90
+msgid "New product"
+msgstr "Novo produto"
+
+#: ../../buscape-wp-ecommerce.php:91
+msgid "See product"
+msgstr "Ver produto"
+
+#: ../../buscape-wp-ecommerce.php:92
+msgid "Search products"
+msgstr "Procurar produtos"
+
+#: ../../buscape-wp-ecommerce.php:93
+msgid "No product found"
+msgstr "Nenhum produto encontrado"
+
+#: ../../buscape-wp-ecommerce.php:94
+msgid "No product found in the trash"
+msgstr "Nenhum produto encontrado na lixeira"
+
+#: ../../buscape-wp-ecommerce.php:96
+msgid "Products from your virtual store"
+msgstr "Produtos da sua loja virtual"
+
+#: ../../buscape-wp-ecommerce.php:102
+msgid "products"
+msgstr "produtos"
+
+#: ../../buscape-wp-ecommerce.php:107
+msgid "Categories"
+msgstr "Categorias"
+
+#: ../../buscape-wp-ecommerce.php:108
+msgid "Category"
+msgstr "Categoria"
+
+#: ../../buscape-wp-ecommerce.php:112
+msgid "categories"
+msgstr "categorias"
+
+#: ../../content/themes/buscape-wp-ecommerce/apiki-wp-dev/apiki-wp-theme-dev.php:34
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../../content/themes/buscape-wp-ecommerce/apiki-wp-dev/apiki-wp-theme-dev.php:43
+msgid "Search results"
+msgstr "Resultados da pesquisa"
+
+#: ../../content/themes/buscape-wp-ecommerce/apiki-wp-dev/apiki-wp-theme-dev.php:55
+msgid "Tag"
+msgstr "Tag"
+
+#: ../../includes/classes/metaboxes.php:13
+msgid "Additional data"
+msgstr "Dados adicionais"
+
+#: ../../includes/classes/options.php:81
+msgid "Buscapé"
+msgstr "Buscapé"
+
+#: ../../includes/classes/options.php:122
+msgid "Setup your store"
+msgstr "Configure sua loja"
+
+#: ../../includes/classes/options.php:150
+msgid "Save"
+msgstr "Salvar"
+
+#: ../../includes/classes/options.php:213
+msgid "Generate XML"
+msgstr "Gerar XML"
+
+#: ../../includes/classes/options.php:404
+msgid "Text to add to cart"
+msgstr "Texto para adicionar ao carrinho"
+
+#: ../../includes/classes/options.php:408
+msgid "Text to add to cart button. Used to add products to the cart."
+msgstr "Texto para o botão de adicionar ao carrinho. Usado para adicionar produtos ao carrinho de compras."
+
+#: ../../includes/classes/options.php:413
+msgid "Text to checkout button"
+msgstr "Texto para o botão de checkout"
+
+#: ../../includes/classes/options.php:417
+msgid "Text to checkout button. Used to close shopping cart."
+msgstr "Texto para o botão de finalizar o pedido. Usado para fechar o carrinho de compras."
+
+#: ../../includes/classes/options.php:422
+msgid "Page to cart"
+msgstr "Página do carrinho"
+
+#: ../../includes/classes/options.php:425
+msgid "Select it..."
+msgstr "Selecione..."
+
+#: ../../includes/classes/options.php:426
+msgid "Choose the page to display the shop cart. Use the follow shortcode in this page: [buscape-wp-ecommerce-cart]"
+msgstr "Selecione a página para exibir o carrinho de compras. Utilize o seguinte shortcode dentro dessa página: [buscape-wp-ecommerce-cart]"
+
+#: ../../includes/classes/options.php:445
+msgid "Source Zip Code"
+msgstr "CEP de origem"
+
+#: ../../includes/classes/options.php:449
+msgid "Store zipcode."
+msgstr "CEP de origem"
+
+#: ../../includes/classes/options.php:454
+msgid "Package type"
+msgstr "Formato da encomenda"
+
+#: ../../includes/classes/options.php:466
+msgid "Package Length"
+msgstr "Comprimento da encomenda"
+
+#: ../../includes/classes/options.php:475
+msgid "Package Height"
+msgstr "Altura da encomenda"
+
+#: ../../includes/classes/options.php:484
+msgid "Package Width"
+msgstr "Largura da encomenda"
+
+#: ../../includes/classes/options.php:493
+msgid "Package Diameter"
+msgstr "Diâmetro da encomenda"
+
+#: ../../includes/classes/shopping-cart.php:444
+msgid "Reference"
+msgstr "Referência"
+
+#: ../../includes/classes/shopping-cart.php:445
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: ../../includes/classes/shopping-cart.php:446
+msgid "Unit price"
+msgstr "Preço unitário"
+
+#: ../../includes/classes/shopping-cart.php:447
+msgid "Total price"
+msgstr "Preço total"
+
+#: ../../includes/classes/uninstall.php:14
+msgid "Uninstall your store"
+msgstr "Desinstale sua loja"
+
+#: ../../includes/classes/uninstall.php:69
+msgid "Uninstall and deactivate"
+msgstr "Desinstalar e desativar"
+
+#~ msgid "Buscape WP e-commerce Integração Buscapé"
+#~ msgstr "Buscapé WP e-commerce Integração Buscapé"
+
+#~ msgid "Buscape WP e-commerce Dashboard"
+#~ msgstr "Buscapé WP e-commerce Painel"
+
+#~ msgid "Buscape WP e-commerce"
+#~ msgstr "Buscapé WP e-commerce"
+
+#~ msgid "Buscape WP e-commerce Store brand"
+#~ msgstr "Buscapé WP e-commerce Marca da loja"
+
+#~ msgid "Buscape WP e-commerce Contact information"
+#~ msgstr "Buscapé WP e-commerce Informações de contato"
+
+#~ msgid "Buscape WP e-commerce Shopping Cart"
+#~ msgstr "Buscapé WP e-commerce Carrinho de compras"
+
+#~ msgid "Buscape WP e-commerce Shipping"
+#~ msgstr "Buscapé WP e-commerce Envio"
+
+#~ msgid "Settings"
+#~ msgstr "Configurações"
+
+#~ msgid "Payments"
+#~ msgstr "Pagamentos"
+
+#~ msgid "Apiki WP e-commerce Purchases"
+#~ msgstr "Apiki WP e-commerce - Pedidos"
+
+#~ msgid "Purchases"
+#~ msgstr "Pedidos"
+
+#~ msgid "Apiki WP e-commerce Customers"
+#~ msgstr "Apiki WP e-commerce - Clientes"
+
+#~ msgid "Customers"
+#~ msgstr "Clientes"
+
+#~ msgid "Apiki WP e-commerce My Account"
+#~ msgstr "Apiki WP e-commerce - Minha Conta"
+
+#~ msgid "My Account"
+#~ msgstr "Minha conta"
+
+#~ msgid "Apiki WP e-commerce My Purchases"
+#~ msgstr "Apiki WP e-commerce - Meus Pedidos"
+
+#~ msgid "My Purchases"
+#~ msgstr "Meus Pedidos"
+
+#~ msgid "Dashboard"
+#~ msgstr "Painel"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Blocked"
+#~ msgstr "Bloqueado"
+
+#~ msgid "Approved"
+#~ msgstr "Aprovado"
+
+#~ msgid "Waiting"
+#~ msgstr "Aguardando"
+
+#~ msgid "Customers list"
+#~ msgstr "Lista de clientes"
+
+#~ msgid "Select a status"
+#~ msgstr "Selecione um status"
+
+#~ msgid "Waiting approval"
+#~ msgstr "Aguardando aprovação"
+
+#~ msgid "Filter"
+#~ msgstr "Filtros"
+
+#~ msgid "Client name"
+#~ msgstr "Nome cliente"
+
+#~ msgid "User name"
+#~ msgstr "Usuário"
+
+#~ msgid "CPF"
+#~ msgstr "CPF"
+
+#~ msgid "Phone"
+#~ msgstr "Telefone"
+
+#~ msgid "Cellphone"
+#~ msgstr "Celular"
+
+#~ msgid "e-Mail"
+#~ msgstr "e-mail"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "View additional data"
+#~ msgstr "Ver dados adicionais"
+
+#~ msgid "Approve"
+#~ msgstr "Aprovar"
+
+#~ msgid "Block"
+#~ msgstr "Bloquear"
+
+#~ msgid "No customers yet."
+#~ msgstr "Nenhum cliente ainda."
+
+#~ msgid "Insert your address."
+#~ msgstr "Preencha o nome de sua rua."
+
+#~ msgid "Insert your address number."
+#~ msgstr "Preencha o número da sua casa."
+
+#~ msgid "Insert your address district."
+#~ msgstr "Preencha seu bairro."
+
+#~ msgid "Insert your city."
+#~ msgstr "Preencha sua cidade."
+
+#~ msgid "Insert your state."
+#~ msgstr "Preencha sua UF."
+
+#~ msgid "Insert your zip code."
+#~ msgstr "Preencha seu CEP."
+
+#~ msgid "Insert your name."
+#~ msgstr "Preencha seu nome."
+
+#~ msgid "Insert your cpf number."
+#~ msgstr "Preencha seu CPF."
+
+#~ msgid "CPF must contain digits only."
+#~ msgstr "CPF precisa conter apenas números."
+
+#~ msgid "Insert your phone number."
+#~ msgstr "Preencha seu telefone."
+
+#~ msgid "Phone number must contain digits only."
+#~ msgstr "O número de telefone precisa conter apenas números."
+
+#~ msgid "Insert your mobile number."
+#~ msgstr "Insira seu celular."
+
+#~ msgid "Mobile number must contain digits only."
+#~ msgstr "O celular precisa conter apenas números."
+
+#~ msgid "Insert your email address."
+#~ msgstr "Preencha seu e-mail."
+
+#~ msgid "Insert a valid email address."
+#~ msgstr "Preencha um e-mail válido."
+
+#~ msgid "Zip code must contain digits only."
+#~ msgstr "CEP precisa conter apenas números."
+
+#~ msgid "Insert a login."
+#~ msgstr "Preencha o login."
+
+#~ msgid "Insert a password."
+#~ msgstr "Preencha sua senha."
+
+#~ msgid "The second password must be the same as the first."
+#~ msgstr "As senhas precisam ser idênticas."
+
+#~ msgid "Invalid CPF."
+#~ msgstr "CPF inválido."
+
+#~ msgid "This username is already registered. Please choose another one."
+#~ msgstr "Este nome de usuário já está registrado. Por favor escolha outro."
+
+#~ msgid "This email is already registered, please choose another one."
+#~ msgstr "Este e-mail já está cadastrado, por favor escolha outro."
+
+#~ msgid "Free shipping to purchases greather than $"
+#~ msgstr "Frete grátis para compras acima de $"
+
+#~ msgid "Purchases list"
+#~ msgstr "Lista de pedidos"
+
+#~ msgid "Waiting Payment"
+#~ msgstr "Aguardando pagamento"
+
+#~ msgid "Paid"
+#~ msgstr "Pago"
+
+#~ msgid "Sent"
+#~ msgstr "Enviado"
+
+#~ msgid "Delivered"
+#~ msgstr "Entregue"
+
+#~ msgid "Order ID"
+#~ msgstr "ID"
+
+#~ msgid "Shipping value"
+#~ msgstr "Valor de Frete"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Pay"
+#~ msgstr "Pagar"
+
+#~ msgid "Cod"
+#~ msgstr "Código"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Unit Price"
+#~ msgstr "Preço unitário"
+
+#~ msgid "Total Price"
+#~ msgstr "Preço total"
+
+#~ msgid "No purchases yet."
+#~ msgstr "Sem pedidos ainda."
+
+#~ msgid "No products in your shopping cart"
+#~ msgstr "Seu carrinho de compras está vazio!"
+
+#~ msgid "See what products you can buy in this site"
+#~ msgstr "Veja quais produtos você pode comprar no site."
+
+#~ msgid "Select your card flag."
+#~ msgstr "Selecione a bandeira do seu cartão."
+
+#~ msgid "Insert the number of plots."
+#~ msgstr "Inisira o número de parcelas."
+
+#~ msgid "Tell us about how you meet us."
+#~ msgstr "Conte-nos como você nos conheceu."
+
+#~ msgid "Shipping mode"
+#~ msgstr "Modo de envio"
+
+#~ msgid "Payment type"
+#~ msgstr "Pagamento"
+
+#~ msgid "You don't have permission in this section. Return and try again."
+#~ msgstr "Você não tem permissões nessa seção. Retorne e tente novamente."
+
+#~ msgid "Warning in create billet"
+#~ msgstr "Aviso ao criar boleto bancário."
+
+#~ msgid "CNPJ"
+#~ msgstr "CNPJ"
+
+#~ msgid "Zip Code"
+#~ msgstr "CEP"
+
+#~ msgid "View items"
+#~ msgstr "Ver itens"
+
+#~ msgid "Insert your card number."
+#~ msgstr "Preencha o número do seu cartão."
+
+#~ msgid "The card number must be a numeric value."
+#~ msgstr "O número do cartão deve conter somente números."
+
+#~ msgid "Insert the card validate month."
+#~ msgstr "Preencha o mês de validade do seu cartão."
+
+#~ msgid "Insert the card validate year."
+#~ msgstr "Preencha o ano de validade do seu cartão."
+
+#~ msgid "Insert the card security code."
+#~ msgstr "Preencha o código de segurança do seu cartão."
+
+#~ msgid "The security code must be a numeric value."
+#~ msgstr "O código de segurança deve conter somente números."
+
+#, fuzzy
+#~ msgid "Insert the company name."
+#~ msgstr "Preencha seu nome."
+
+#, fuzzy
+#~ msgid "Insert the company nicename."
+#~ msgstr "Preencha seu nome."
+
+#, fuzzy
+#~ msgid "Insert your CNPJ."
+#~ msgstr "Preencha seu CPF"
+
+#, fuzzy
+#~ msgid "CNPJ must contain digits only."
+#~ msgstr "CPF precisa conter apenas números."
+
+#, fuzzy
+#~ msgid "Insert the contact name."
+#~ msgstr "Preencha seu nome."
+
+#, fuzzy
+#~ msgid "Invalid CNPJ."
+#~ msgstr "CPF inválido."
+
+#~ msgid "Insert your CPF."
+#~ msgstr "Preencha seu CPF"
+
+#~ msgid "Insert your email."
+#~ msgstr "Preencha seu e-mail"
+
+#~ msgid "Insert a valid email."
+#~ msgstr "Preencha um e-mail válido."
+
+#~ msgid "Tell how you knew."
+#~ msgstr "Conte-nos como você nos conheceu."
+
+#~ msgid "Apiki WP e-commerce Configuration"
+#~ msgstr "Apiki WP e-commerce Configurações"
+
+#~ msgid "Valid payment methods"
+#~ msgstr "Métodos de pagamento válidos"
+
+#~ msgid "Checkout"
+#~ msgstr "Checkout"
+
+#~ msgid "Product weight"
+#~ msgstr "Peso do produto"
+
+#~ msgid "Delivery Information"
+#~ msgstr "Informações de entrega"
+
+#~ msgid "Availability"
+#~ msgstr "Disponibilidade"
+
+#~ msgid "Unavailable"
+#~ msgstr "Indisponível"

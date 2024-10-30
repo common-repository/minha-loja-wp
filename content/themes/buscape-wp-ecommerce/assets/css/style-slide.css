@@ -1,0 +1,56 @@
+.slide-home ul { overflow: hidden; }
+.slide-home li {
+    width: 940px !important;
+    position: relative;
+}
+.featured-description .btn a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.slide-detail {
+    clear:both;
+    float:left;
+    height: 105px;
+    overflow: hidden;
+    margin-left:35px;
+    width:304px!important;
+}
+.slide-detail  ul { margin: 11px 0 0 0; }
+.slide-detail  ul li { margin: 0 11px; }
+button.next, button.prev {
+    background: url("../images/btn-next-prev.png") no-repeat;
+    border: 0 none;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 250px ;
+    text-indent: -99999px;
+    text-transform: uppercase;
+    z-index: 9;
+    clear: both;
+}
+button.prev { left: 894px;    background-position: 0px -50px; }
+
+button.next:hover, button.prev:hover { background-position: -58px 0px }
+button.prev:hover { background-position: -20px -37px }
+button.next:active, button.prev:active { background-position: -115px 0 }
+button.prev:hover { background-position: -57px -50px }
+button.prev:active, button.prev:focus { background-position: -115px -50px }
+
+button.next-detail, button.prev-detail {
+    top: 330px;
+    width: 32px;
+    height: 32px;
+    background-position: 0 -101px;
+}
+button.next-detail:hover { background-position: -37px -101px; }
+button.next-detail:active { background-position: -75px -101px; }
+button.prev-detail {
+    left: 338px !important;
+    background-position: 0 -136px;
+}
+button.prev-detail:hover { background-position: -38px -136px; }
+button.prev-detail:active, button.prev-detail:focus { background-position: -77px -136px; }

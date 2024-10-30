@@ -1,0 +1,34 @@
+#buscape-wp-ecommerce p {display: inline-table; width: 96%}
+#cart-page{width: 27em}
+#steps{margin-top: 15px; padding-top: 5px; display: inline-block}
+#steps ul li {float: left}
+#steps a {
+    margin-right: 30px;
+    text-decoration: none;
+}
+#steps span {color: #21759B; display: inline-block}
+#steps .current-step a, #steps .current-step span{color: #464646; font-weight: bold}
+.step{
+    border: 1px solid #999999;
+    margin-right: 5px;
+    padding: 2px 7px 1px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+#bwec-form{clear: both}
+th .description {display: inline-block}
+.quebarato-hidden { display: none }
+.uninstall-details {
+    background-color: #F9F9F9;
+    border: 1px solid #DFDFDF;
+    margin-left: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Metabox de informações do produto */
+#bwec-product-details label {font-weight: bold}
+#bwec-product-details input[type=text]{width: 100%; text-align: left!important}
+#bwec-product-details .bwec-hidden{display: none}
+#bwec-quebarato-options #condition {display: none;}
